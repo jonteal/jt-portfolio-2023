@@ -2,8 +2,6 @@ import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 
-// import HouseLogo from '../../assets/house_icon.png';
-
 import "./navigation.css";
 
 const Navigation = () => {
