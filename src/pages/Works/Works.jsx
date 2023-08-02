@@ -37,10 +37,12 @@ const projects = [
 
 const Works = () => {
   return (
-    <div className="works-container">
-      {projects.map((project) => (
-        <ProjectCard key={project.id} project={project} />
-      ))}
+    <div className="border w-screen m-3 rounded-xl flex flex-col items-center bg-gray-800 p-14">
+      <div className="works-container rounded-xl">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
     </div>
   );
 };

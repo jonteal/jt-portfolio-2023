@@ -33,10 +33,10 @@ const Contact = () => {
       <div className="border w-6/12 m-3 rounded-xl bg-gray-800 p-9">
         <p className="text-gray-100 italic">Contact Me</p>
         <h2 className="text-gray-100 text-6xl">
-          Let's work together <span className="font-thin">&</span> make your
-          website turn visitors into engaged customers
+          Let me know how I can contribute to helping your organization achieve
+          its highest potential!
         </h2>
-        <p className="text-gray-100">jonjackson.webdesign@gmail.com</p>
+        <p className="text-gray-100 mt-5">jonjackson.webdesign@gmail.com</p>
       </div>
 
       <div className="border w-6/12 m-3 rounded-xl" id="contact-me-section">

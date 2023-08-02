@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+    border-radius: 0.75rem 0.75rem 0 0;
 }
 
 .image-container {
@@ -47,6 +48,7 @@
 }
 
 .project-card-link-container {
+    border-radius: 0 0 0.75rem 0.75rem;
     /* background-color: gray; */
     width: 100%;
     height: 3rem;
