@@ -13,3 +13,18 @@
     border: none;
     color: white;
 }
+
+.about-description {
+    font-size: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2.5rem;
+}
+
+.about-description-sub {
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+}

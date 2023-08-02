@@ -8,7 +8,7 @@
 
 .logo-container {
   height: 100%;
-  width: 70px;    
+  width: 200px;    
   padding: 25px;
 }
 
@@ -23,6 +23,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.image-link {
+  width: 50px;
 }
 
 .nav-link {
@@ -49,4 +53,25 @@
 
 .nav-book-button:hover {
   background-color: #555d80;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation-container {
+    margin-bottom: 0.75rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-link {
+    padding: 10px 9px;
+    font-size: 1.1rem;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .logo-container {
+    display: none;
+  }
 }

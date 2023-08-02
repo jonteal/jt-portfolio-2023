@@ -10,7 +10,7 @@ const Navigation = () => {
       <div className="navigation-container">
         <Link className="logo-container" to="/">
           <img
-            className="w-96 rounded-xl self-end"
+            className="rounded-xl self-end image-link"
             src="/images/me.jpeg"
             alt=""
           />

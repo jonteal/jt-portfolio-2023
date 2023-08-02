@@ -6,17 +6,18 @@ import "./resume.css";
 const Resume = () => {
   return (
     <div className="resume-container">
-      <h1 className="text-black text-2xl font-bold p-2">Resume</h1>
+      <h1 className="text-gray-800 font-light text-6xl mb-2">Resume</h1>
       <a
         rel="noreferrer noopener"
         target="_blank"
-        className="transform transition duration-500 hover:text-gray-100 hover:scale-110 hover:bg-cyan-700 flex justify-center items-center mt-0 mb-5 py-5 text-gray-800 bg-gray-100 p-5 border rounded-xl w-60"
+        className="border transform transition duration-500 hover:text-gray-100 hover:scale-110 hover:bg-cyan-700 flex justify-center items-center mt-0 mb-5 py-5 text-gray-800 bg-gray-100 p-5 rounded-xl w-60"
         href={ResumePdf}
       >
-        Download
+        <span className="mr-3">Download</span>
+        <FaExternalLinkAlt className="text-black-100" />
       </a>
 
-      <div className="resume-body-container border w-screen m-3 rounded-xl flex flex-col items-center bg-gray-800 pt-7">
+      <div className="resume-body-container border w-screen rounded-xl flex flex-col items-center bg-gray-800 pt-7">
         <h1 className="text-gray-100 text-4xl font-bold mb-3">Jon Jackson</h1>
 
         <div className="personal-info-container mb-3">
@@ -83,81 +84,85 @@ const Resume = () => {
         </div>
         {/* TECHNICAL SKILLS */}
         <div className="mb-3 technical-skills-section">
-          <div className="flex flex-row items-end">
+          <div className="resume-header">
             <h2 className="text-gray-100 text-2xl font-bold mr-3">
               Technical Skills
             </h2>
             <p className="text-gray-100">* limited experience</p>
           </div>
-          <div className="flex flex-row">
+          <div className="skill-item">
             <h3 className="text-gray-100 mr-3 font-bold">Languages</h3>
-            <span className="text-gray-100">|</span>
-            <p className="text-gray-100 ml-3">
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 skill-desc">
               Javascript, Typescript, HTML, CSS, SQL*, Python*
             </p>
           </div>
-          <div className="flex flex-row">
+          <div className="skill-item">
             <h3 className="text-gray-100 mr-3 font-bold">Frameworks</h3>
-            <span className="text-gray-100">|</span>
-            <p className="text-gray-100 ml-3">
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 skill-desc">
               ReactJS, Wordpress, ExpressJS, NextJS, Bootstrap, Handlebars*
             </p>
           </div>
-          <div className="flex flex-row">
+          <div className="skill-item">
             <h3 className="text-gray-100 mr-3 font-bold">Javascript</h3>
-            <span className="text-gray-100">|</span>
-            <p className="text-gray-100 ml-3">
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 skill-desc">
               Lodash, Webpack*, NPM, Axios, jQuery*, Sequelize, Prettier,
               ESLint, MomentJS
             </p>
           </div>
-          <div className="flex flex-row">
+          <div className="skill-item">
             <h3 className="text-gray-100 mr-3 font-bold">CSS</h3>
-            <span className="text-gray-100">|</span>
-            <p className="text-gray-100 ml-3">
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 skill-desc">
               SASS, TailwindCSS, Material UI, Styled Components
             </p>
           </div>
-          <div className="flex flex-row">
+          <div className="skill-item">
             <h3 className="text-gray-100 mr-3 font-bold">Request/Formats</h3>
-            <span className="text-gray-100">|</span>
-            <p className="text-gray-100 ml-3">AJAX, JSON, REST, GraphQL</p>
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 skill-desc">
+              AJAX, JSON, REST, GraphQL
+            </p>
           </div>
-          <div className="flex flex-row">
+          <div className="skill-item">
             <h3 className="text-gray-100 mr-3 font-bold">Databases</h3>
-            <span className="text-gray-100">|</span>
-            <p className="text-gray-100 ml-3">
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 skill-desc">
               MySQL*, PostgreSQL*, MongoDB, Sqlite*
             </p>
           </div>
-          <div className="flex flex-row">
+          <div className="skill-item">
             <h3 className="text-gray-100 mr-3 font-bold">Cloud Services</h3>
-            <span className="text-gray-100">|</span>
-            <p className="text-gray-100 ml-3">AWS*, Google Cloud - Firebase*</p>
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 skill-desc">
+              AWS*, Google Cloud - Firebase*
+            </p>
           </div>
-          <div className="flex flex-row">
+          <div className="skill-item">
             <h3 className="text-gray-100 mr-3 font-bold">Platforms</h3>
-            <span className="text-gray-100">|</span>
-            <p className="text-gray-100 ml-3">Web, Microsoft Office</p>
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 skill-desc">Web, Microsoft Office</p>
           </div>
-          <div className="flex flex-row">
+          <div className="skill-item">
             <h3 className="text-gray-100 mr-3 font-bold">Dev Ops</h3>
-            <span className="text-gray-100">|</span>
-            <p className="text-gray-100 ml-3">
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 skill-desc">
               Docker* , BitBucket*, Github, CircleCI*
             </p>
           </div>
-          <div className="flex flex-row">
+          <div className="skill-item">
             <h3 className="text-gray-100 mr-3 font-bold">
               Third Party Services
             </h3>
-            <span className="text-gray-100">|</span>
-            <p className="text-gray-100 ml-3">Stripe*</p>
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 skill-desc">Stripe*</p>
           </div>
-          <div className="flex flex-row">
+          <div className="skill-item">
             <h3 className="text-gray-100 mr-3 font-bold">Other</h3>
-            <span className="text-gray-100">|</span>
-            <p className="text-gray-100 ml-3">
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 skill-desc">
               Figma*, Miro, NodeJS, Redux, Contentful (CMS), Micro-frontends*
             </p>
           </div>
@@ -166,7 +171,7 @@ const Resume = () => {
         <div className="recent-projects-section mb-3">
           <h2 className="text-gray-100 text-2xl font-bold">Recent Projects</h2>
           <div className="recent-project-container mb-5">
-            <div className="flex flex-row project-title-container">
+            <div className="project-title-container">
               <div className="flex flex-row">
                 <h3 className="text-gray-100 mr-3 font-bold">Study Buddy</h3>
                 <span className="text-gray-100">|</span>
@@ -194,7 +199,7 @@ const Resume = () => {
             </a>
           </div>
           <div className="recent-project-container mb-5">
-            <div className="flex flex-row project-title-container">
+            <div className="project-title-container">
               <div className="flex flex-row">
                 <h3 className="text-gray-100 mr-3 font-bold">Crown Clothing</h3>
                 <span className="text-gray-100">|</span>
@@ -224,7 +229,7 @@ const Resume = () => {
             </a>
           </div>
           <div className="recent-project-container mb-5">
-            <div className="flex flex-row project-title-container">
+            <div className="project-title-container">
               <div className="flex flex-row">
                 <h3 className="text-gray-100 mr-3 font-bold">Ozark AirBnb</h3>
                 <span className="text-gray-100">|</span>
@@ -255,14 +260,14 @@ const Resume = () => {
         {/* EXPERIENCE SECTION */}
         <div className="experience-section mb-3">
           <h2 className="text-gray-100 text-2xl font-bold">Experience</h2>
-          <div className="flex flex-row">
+          <div className="experience-item">
             <h3 className="text-gray-100 font-bold mr-3">CVS Health</h3>
-            <span className="text-gray-100">|</span>
-            <p className="text-gray-100 ml-3">
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 experience-title">
               Digital Software Development Engineer
             </p>
           </div>
-          <p className="text-gray-100 italic">
+          <p className="text-gray-100 italic mb-3">
             Frontend web developer for Aetna Health using React, Typescript,
             Contentful, Redux, Sagas, GraphQL, and AWS.
           </p>
@@ -297,20 +302,16 @@ const Resume = () => {
           <h2 className="text-gray-100 text-2xl font-bold">Education</h2>
           <div className="education-item mb-5">
             <div className="education-item-container">
-              <div className="flex flex-row">
-                <h3 className="text-gray-100 font-bold mr-3">2U / edX</h3>
-                <span className="text-gray-100">|</span>
-                <p className="text-gray-100 ml-3">
-                  University of Denver, Denver, CO
-                </p>
-              </div>
-              <p className="text-gray-100">Aug 2021 - Feb 2022</p>
+              <p className="text-gray-100 font-bold">
+                University of Denver, Denver, CO
+              </p>
+              <p className="text-gray-100">2021 - 2022</p>
             </div>
             <p className="text-gray-100">
               Full Stack Web Development Certificate
             </p>
           </div>
-          <div className="education-item mb-3">
+          <div className="education-item mb-5">
             <div className="education-item-container">
               <p className="text-gray-100 font-bold mr-3">
                 University of Arkansas, Fayetteville, AR
@@ -323,18 +324,18 @@ const Resume = () => {
 
         <div className="personal-section">
           <h2 className="text-gray-100 text-2xl font-bold">Personal</h2>
-          <div className="flex flex-row">
+          <div className="personal-item-container">
             <h3 className="text-gray-100 font-bold mr-3">Interests</h3>
-            <span className="text-gray-100">|</span>
-            <p className="text-gray-100 ml-3">
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 personal-item-desc">
               Spending time with family, avid reader, technology, writing music,
               running, rock climbing
             </p>
           </div>
-          <div className="flex flex-row">
+          <div className="personal-item-container mb-20">
             <h3 className="text-gray-100 font-bold mr-3">Goals</h3>
-            <span className="text-gray-100">|</span>
-            <p className="text-gray-100 ml-3">
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 personal-item-desc">
               Start a tech company, climb a 14,000 foot mountain, read a book a
               week, always be improving
             </p>
