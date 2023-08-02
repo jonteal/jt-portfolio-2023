@@ -1,7 +1,32 @@
 import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [done, setDone] = useState(false);
+
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_API_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <div className="flex flex-row w-screen justify-center mt-10">
@@ -23,32 +48,28 @@ const Contact = () => {
             </p>
             <p>2023</p>
           </div>
-          <form
-            // ref={formRef}
-            // onSubmit={handleSubmit}
-            className="flex flex-col"
-          >
-            <label className="text-2xl font-light" htmlFor="name">
+          <form ref={formRef} onSubmit={sendEmail} className="flex flex-col">
+            <label className="text-2xl font-light" htmlFor="from_name">
               Name
             </label>
             <input
               type="text"
-              name="name"
+              name="from_name"
               placeholder="Enter your name"
               className="border p-3 mt-2 mb-5 rounded-md"
             />
 
-            <label className="text-2xl font-light" htmlFor="">
+            <label className="text-2xl font-light" htmlFor="from_email">
               Email Address
             </label>
             <input
               type="text"
-              name="user_email"
+              name="from_email"
               placeholder="Enter your email"
               className="border p-3 mt-2 mb-5 rounded-md"
             />
 
-            <label className="text-2xl font-light" htmlFor="">
+            <label className="text-2xl font-light" htmlFor="message">
               Message
             </label>
             <textarea

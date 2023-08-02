@@ -1,0 +1,15 @@
+.contact-me-link {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-me-link:hover {
+    text-decoration: none;
+    border: none;
+    color: white;
+}
+
+.contact-me-button:hover {
+    border: none;
+    color: white;
+}
