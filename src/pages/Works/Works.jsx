@@ -29,7 +29,7 @@ const projects = [
     name: "Study Buddy",
     description: "A full stack MERN tool to help students study",
     github: "https://github.com/jonteal/studybuddy",
-    // linkLink: '',
+    linkLink: "https://studybuddy-frontend.vercel.app/",
     image: studyBuddyImage,
     imageDesc: "A tool for students to use in order to prepare for tests",
   },
