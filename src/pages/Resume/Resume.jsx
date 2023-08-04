@@ -267,7 +267,7 @@ const Resume = () => {
               Digital Software Development Engineer
             </p>
           </div>
-          <p className="text-gray-100 italic mb-3">
+          <p className="text-gray-100 italic mb-2">
             Frontend web developer for Aetna Health using React, Typescript,
             Contentful, Redux, Sagas, GraphQL, and AWS.
           </p>
@@ -294,6 +294,27 @@ const Resume = () => {
             <li className="text-gray-100">
               Review and quality test all pull requests on my team prior to code
               merge
+            </li>
+          </ul>
+          <div className="experience-item mt-5">
+            <h3 className="text-gray-100 font-bold mr-3">2U / edX</h3>
+            <span className="text-gray-100 vertical-bar">|</span>
+            <p className="text-gray-100 experience-title">Tutor & Grader</p>
+          </div>
+          <p className="text-gray-100 italic mb-2">
+            Tutor and grader supporting students going through a 6-month full
+            stack engineering program.
+          </p>
+          <ul className="list-disc">
+            <li className="text-gray-100">
+              Tutoring 8 students for 1 hour per week each to support their
+              learning and comprehension of concepts ranging from basic HTML,
+              CSS, Javascript, developing and consuming APIs, SQL and NoSQL
+              database creation and management, React, Git/Github, and more.
+            </li>
+            <li className="text-gray-100">
+              Grading the weekly assignments of students and offering written
+              feedback, guidance, and support.
             </li>
           </ul>
         </div>
