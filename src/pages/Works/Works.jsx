@@ -20,7 +20,7 @@ const projects = [
     name: "Ozark Airbnb",
     description: "A front end layout for an Airbnb website with navigation",
     github: "https://github.com/jonteal/meshell-jackson-properties",
-    liveLink: "https://splendorous-paprenjak-226b7b.netlify.app/",
+    liveLink: "https://ozark-airbnb.netlify.app/",
     image: ozarkAirbnbImage,
     imageDesc: "Front end website for an Airbnb business called Ozark Airbnb",
   },
