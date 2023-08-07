@@ -1,5 +1,3 @@
-import Works from "../Works/Works";
-
 const Home = () => {
   return (
     <div className="h-64 bg-white p-2">

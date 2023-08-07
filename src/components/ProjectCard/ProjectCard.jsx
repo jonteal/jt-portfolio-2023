@@ -4,7 +4,7 @@ import "./projectCard.css";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="border h-96 w-96 project-container flex flex-col">
+    <div className="border project-container flex flex-col">
       <div className="project-header-container bg-gray-200">
         <h3 className="text-lg font-bold p-2 text-black">{project.name}</h3>
       </div>
@@ -15,6 +15,21 @@ const ProjectCard = ({ project }) => {
           src={project.image}
         />
         <p className="project-description">{project.description}</p>
+      </div>
+      <div className="project-info-container">
+        <div className="project-info-description-container">
+          <p className="project-info-description">
+            <span className="project-info-header">Description: </span>
+            {project.description}
+          </p>
+          <hr />
+        </div>
+        <div className="project-info-tech-container">
+          <p className="project-info-tech">
+            <span className="project-info-header">Technologies:</span>{" "}
+            {project.technologies}
+          </p>
+        </div>
       </div>
       <div className="project-card-link-container bg-gray-200">
         <a
