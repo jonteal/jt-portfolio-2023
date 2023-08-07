@@ -12,17 +12,18 @@ const projects = [
     description:
       "A sleek and minimal e-commerce platform with cart, navigation, and stripe payment processing integration.",
     github: "https://github.com/jonteal/capstone-e-commerce",
-    liveLink: "https://radiant-cactus-aa7b51.netlify.app/",
+    liveLink: "https://capstone-clothing.netlify.app/",
     image: crownClothingImage,
     imageDesc: "E-Commerce store for clothing",
-    technologies: "React, Typescript, Redux, Redux-Sagas, Styled Components",
+    technologies:
+      "React, Redux, Redux-Saga, Firebase, SASS, Typescript, Styled Components, Stripe",
   },
   {
     id: 2,
     name: "Ozark Airbnb",
     description:
       "A front end layout for an Airbnb website with dynamic routing and local static database driving dynamic content.",
-    github: "https://github.com/jonteal/meshell-jackson-properties",
+    github: "https://github.com/jonteal/ozark-airbnb",
     liveLink: "https://ozark-airbnb.netlify.app/",
     image: ozarkAirbnbImage,
     imageDesc: "Front end website for an Airbnb business called Ozark Airbnb",

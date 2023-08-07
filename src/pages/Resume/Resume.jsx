@@ -250,7 +250,7 @@ const Resume = () => {
             </p>
             <a
               className="text-gray-100 mr-3 flex flex-row items-center"
-              href="https://github.com/jonteal/meshell-jackson-properties"
+              href="https://github.com/jonteal/ozark-airbnb"
             >
               <span className="mr-3">Github</span>
               <FaExternalLinkAlt className="text-gray-100" />
