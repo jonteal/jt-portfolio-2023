@@ -4,7 +4,7 @@ import "./projectCard.css";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="border h-96 rounded-xl w-96 project-container flex flex-col">
+    <div className="border h-96 w-96 project-container flex flex-col">
       <div className="project-header-container bg-gray-200">
         <h3 className="text-lg font-bold p-2 text-black">{project.name}</h3>
       </div>
