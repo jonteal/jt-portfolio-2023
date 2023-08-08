@@ -1,14 +1,14 @@
 import ResumePdf from "../../assets/images/resume.pdf";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { useState } from "react";
-
-import "./resume.css";
 import ReferencesComponent from "../../components/ReferencesComponent/ReferencesComponent";
 import ResumeComponent from "../../components/ResumeComponent/ResumeComponent";
 
+import "./resume.css";
+
 const Resume = () => {
-  const types = ["Resume", "References"];
-  const [active, setActive] = useState(types[0]);
+  const [active, setActive] = useState(true);
+
   return (
     <div className="resume-container">
       <h1 className="text-gray-800 font-light text-6xl mb-2">Resume</h1>
@@ -22,18 +22,21 @@ const Resume = () => {
         <FaExternalLinkAlt className="text-black-100" />
       </a>
       <>
-        <div>
-          {types.map((type) => (
-            <button
-              key={type}
-              active={active === type}
-              onClick={() => setActive(type)}
-            >
-              {type}
-            </button>
-          ))}
+        <div className="resume-button-container">
+          <button
+            className={active ? "active-tab" : "non-active-tab"}
+            onClick={() => setActive(true)}
+          >
+            Resume
+          </button>
+          <button
+            className={active ? "non-active-tab" : "active-tab"}
+            onClick={() => setActive(false)}
+          >
+            References
+          </button>
         </div>
-        {active === "Resume" ? <ResumeComponent /> : <ReferencesComponent />}
+        {active ? <ResumeComponent /> : <ReferencesComponent />}
       </>
     </div>
   );

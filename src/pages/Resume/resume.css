@@ -5,6 +5,7 @@
     justify-content: center;
     width: 100%;
     /* padding: 3.5rem;  */
+    margin-top: 0;
 }
 
 .brand-statement-section,
@@ -72,6 +73,24 @@
 
 .resume-body-container {
     margin: 0.75rem;
+}
+
+.active-tab {
+    border: black;
+    background-color: lightgray;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 5px 5px 0 0;
+    border: black;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.non-active-tab {
+    border-bottom: black;
+    background-color: white;
+    margin: 0 5px;
 }
 
 
