@@ -241,6 +241,7 @@ const ResumeComponent = () => {
             Digital Software Development Engineer
           </p>
         </div>
+        <p className="text-gray-100">June 2022 - Present</p>
         <p className="text-gray-100 italic mb-2">
           Frontend web developer for Aetna Health using React, Typescript,
           Contentful, Redux, Sagas, GraphQL, and AWS.
@@ -275,6 +276,7 @@ const ResumeComponent = () => {
           <span className="text-gray-100 vertical-bar">|</span>
           <p className="text-gray-100 experience-title">Tutor & Grader</p>
         </div>
+        <p className="text-gray-100">Mar 2022 - May 2022</p>
         <p className="text-gray-100 italic mb-2">
           Tutor and grader supporting students going through a 6-month full
           stack engineering program.

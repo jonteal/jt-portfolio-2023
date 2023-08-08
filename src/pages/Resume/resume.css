@@ -34,7 +34,7 @@
 .project-title-container,
 .education-item-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
