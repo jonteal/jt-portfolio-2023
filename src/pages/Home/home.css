@@ -1,12 +1,10 @@
-.main-image-container {
-    position: relative;
-}
-
-.works-component {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.available-text {
+    background-color: rgb(26, 87, 26);
     color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-style: italic;
 }
