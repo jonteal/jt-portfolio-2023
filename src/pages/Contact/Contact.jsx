@@ -13,8 +13,8 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
+        "service_1h7upjw",
+        "template_ggj73bi",
         formRef.current,
         import.meta.env.VITE_API_KEY
       )
@@ -35,11 +35,13 @@ const Contact = () => {
       <div className="contact-layout-container">
         <div className="border m-3 rounded-xl bg-gray-800 p-9 contact-description-container">
           <p className="text-gray-100 italic">Contact Me</p>
-          <h2 className="text-gray-100 contact-description">
+          <h2 className="text-gray-100 contact-description italic">
             Let me know how I can contribute to helping your organization
             achieve its highest potential!
           </h2>
-          <p className="text-gray-100 mt-5">jonjackson.webdesign@gmail.com</p>
+          <p className="text-gray-100 mt-5 text-2xl">
+            jonjackson.webdesign@gmail.com
+          </p>
         </div>
 
         <div
@@ -84,7 +86,7 @@ const Contact = () => {
                 className="border p-3 mt-2 mb-5 rounded-md"
               />
 
-              <button className="transform transition duration-500 hover:scale-110 hover:bg-cyan-700 flex justify-center items-center border w-36 mb-5 bg-gray-800 text-gray-100 rounded-md py-5">
+              <button className="transform transition duration-500 hover:scale-110 hover:bg-cyan-700 flex justify-center items-center border w-36 mb-5 bg-gray-800 text-gray-100 rounded-md py-3">
                 Send an email
               </button>
 

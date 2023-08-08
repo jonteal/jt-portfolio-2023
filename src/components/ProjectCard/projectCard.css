@@ -94,3 +94,12 @@
   background-color: white;
   color: black;
 }
+
+@media only screen and (max-width: 600px) {
+  .project-container {
+    width: 365px;
+  }
+  .project-info-description {
+    margin-bottom: 10px;
+}
+}

@@ -7,4 +7,30 @@
     padding: 5px;
     margin-bottom: 5px;
     font-style: italic;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.my-name {
+    font-size: 6rem;
+}
+
+.web-sub-header {
+    font-size: 4.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .available-text {
+        width: 90%;
+    }
+    .my-name {
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+    .web-sub-header {
+        font-size: 3.5rem;
+        margin-top: 20px;
+        
+    }
+  }
