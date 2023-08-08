@@ -5,7 +5,7 @@ const ReferencesComponent = () => {
       <h2 className="text-gray-100 text-3xl font-bold mb-3">References</h2>
 
       {/* REFERENCES */}
-      <div className="summary-section mb-3 mt-5 flex items-center">
+      {/* <div className="summary-section mb-3 mt-5 flex items-center">
         <h3 className="text-gray-100 text-2xl font-bold">Heather Newton</h3>
         <p className="text-gray-100 text-1xl">
           Senior Manager of Digital Engineering
@@ -18,7 +18,7 @@ const ReferencesComponent = () => {
           575-202-5485
         </a>
         <p className="text-gray-100 text-1xl">Relationship: Manager</p>
-      </div>
+      </div> */}
       <div className="summary-section mb-3 mt-5 flex items-center">
         <h3 className="text-gray-100 text-2xl font-bold">
           Francis Vithayathil
