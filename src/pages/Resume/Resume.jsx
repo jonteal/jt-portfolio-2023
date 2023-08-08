@@ -1,6 +1,7 @@
-import ResumePdf from "../../assets/images/resume.pdf";
-import { FaExternalLinkAlt } from "react-icons/fa";
 import { useState } from "react";
+import ResumePdf from "../../assets/images/resume.pdf";
+import ReferencesPdf from "../../assets/images/references.pdf";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import ReferencesComponent from "../../components/ReferencesComponent/ReferencesComponent";
 import ResumeComponent from "../../components/ResumeComponent/ResumeComponent";
 
@@ -26,7 +27,7 @@ const Resume = () => {
           rel="noreferrer noopener"
           target="_blank"
           className="references-dl-btn border transform transition duration-500 hover:text-gray-100 hover:scale-110 hover:bg-cyan-700 flex justify-center items-center py-3 text-gray-800 bg-gray-100 p-3 rounded-xl w-60"
-          href={ResumePdf}
+          href={ReferencesPdf}
         >
           <span className="mr-3">Download References</span>
           <FaExternalLinkAlt className="text-black-100" />
