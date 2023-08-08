@@ -93,6 +93,19 @@
     margin: 0 5px;
 }
 
+.resume-btns-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+
+.resume-dl-btn {
+    margin: 30px 20px;
+}
+.references-dl-btn {
+    margin: 30px 20px;
+}
+
 
 @media only screen and (max-width: 600px) {
     .personal-info-container {
@@ -143,5 +156,17 @@
     }
     .skill-desc {
         margin-left: 0;
+    }
+    .resume-btns-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .resume-dl-btn {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .references-dl-btn {
+        margin-top: 0;
     }
   }

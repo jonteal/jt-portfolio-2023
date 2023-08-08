@@ -17,6 +17,7 @@ const ReferencesComponent = () => {
         <a href="tel:5752025485" className="text-gray-100 text-1xl">
           575-202-5485
         </a>
+        <p className="text-gray-100 text-1xl">Relationship: Manager</p>
       </div>
       <div className="summary-section mb-3 mt-5 flex items-center">
         <h3 className="text-gray-100 text-2xl font-bold">
@@ -35,6 +36,7 @@ const ReferencesComponent = () => {
         <a href="tel:8635134134" className="text-gray-100 text-1xl">
           863-513-4134
         </a>
+        <p className="text-gray-100 text-1xl">Relationship: Team Member</p>
       </div>
       <div className="summary-section mb-3 mt-5 flex items-center">
         <h3 className="text-gray-100 text-2xl font-bold">Mason Holland</h3>
@@ -51,6 +53,7 @@ const ReferencesComponent = () => {
         <a href="tel:3104158457" className="text-gray-100 text-1xl">
           310-415-8457
         </a>
+        <p className="text-gray-100 text-1xl">Relationship: Team Member</p>
       </div>
       <div className="summary-section mb-3 mt-5 flex items-center">
         <h3 className="text-gray-100 text-2xl font-bold">Ivan Ontiveros</h3>
@@ -65,13 +68,24 @@ const ReferencesComponent = () => {
         <a href="tel:6025763985" className="text-gray-100 text-1xl">
           602-576-3985
         </a>
+        <p className="text-gray-100 text-1xl">Relationship: Team Member</p>
       </div>
-      {/* <div className="summary-section mb-3 mt-5 flex items-center">
+      <div className="summary-section mb-3 mt-5 flex items-center">
         <h3 className="text-gray-100 text-2xl font-bold">Laurel Thorburn</h3>
-        <p className="text-gray-100 text-1xl">Position Title, Company Name</p>
-        <a href="mailto: newtonh1@aetna.com"  className="text-gray-100 text-1xl">Email Address</a>
-        <a href="tel:4082505504" className="text-gray-100 text-1xl">408-250-5504</a>
-      </div> */}
+        <p className="text-gray-100 text-1xl">Software Developer</p>
+        <p className="text-gray-100 text-1xl">Shopify</p>
+        <a
+          href="mailto: laurelthorburn@gmail.com"
+          className="text-gray-100 text-1xl"
+        >
+          laurelthorburn@gmail.com
+        </a>
+        <a href="tel:4082505504" className="text-gray-100 text-1xl">
+          408-250-5504
+        </a>
+        <p className="text-gray-100 text-1xl">Relationship:</p>
+        <p className="text-gray-100 text-1xl">Shared project contributor</p>
+      </div>
       <div className="summary-section mb-3 mt-5 flex items-center">
         <h3 className="text-gray-100 text-2xl font-bold">Robert Parsons</h3>
         <p className="text-gray-100 text-1xl">Position Title, Company Name</p>
@@ -84,6 +98,7 @@ const ReferencesComponent = () => {
         <a href="tel:6267031909" className="text-gray-100 text-1xl">
           626-703-1909
         </a>
+        <p className="text-gray-100 text-1xl">Relationship: Fellow tutor</p>
       </div>
     </div>
   );

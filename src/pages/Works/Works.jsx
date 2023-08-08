@@ -35,7 +35,7 @@ const projects = [
     description:
       "A full stack MERN tool to help students study and prepare for tests as well as enhance memorization skills.",
     github: "https://github.com/jonteal/studybuddy",
-    liveLink: "https://studybuddy-frontend.vercel.app/",
+    // liveLink: "https://studybuddy-frontend.vercel.app/",
     image: studyBuddyImage,
     imageDesc: "A tool for students to use in order to prepare for tests",
     technologies: "React, Express, MongoDB, Node, GraphQL",

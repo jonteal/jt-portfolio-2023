@@ -40,14 +40,20 @@ const ProjectCard = ({ project }) => {
         >
           <FaGithub />
         </a>
-        <a
-          rel="noreferrer noopener"
-          target="_blank"
-          className="mx-12 project-card-link transform transition duration-500 hover:text-gray-100 hover:scale-110 hover:bg-cyan-700 flex justify-center items-center mt-0 text-gray-800 bg-gray-100 p-2 border rounded-xl w-60"
-          href={project.liveLink}
-        >
-          <FaRegEye />
-        </a>
+        {project.liveLink ? (
+          <a
+            rel="noreferrer noopener"
+            target="_blank"
+            className="mx-12 project-card-link transform transition duration-500 hover:text-gray-100 hover:scale-110 hover:bg-cyan-700 flex justify-center items-center mt-0 text-gray-800 bg-gray-100 p-2 border rounded-xl w-60"
+            href={project.liveLink}
+          >
+            <FaRegEye />
+          </a>
+        ) : (
+          <p className="mx-12 flex justify-center items-center mt-0 bg-gray-100 p-2 border rounded-xl w-96">
+            No live link
+          </p>
+        )}
       </div>
     </div>
   );
