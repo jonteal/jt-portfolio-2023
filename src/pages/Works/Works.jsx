@@ -16,7 +16,7 @@ const projects = [
     image: crownClothingImage,
     imageDesc: "E-Commerce store for clothing",
     technologies:
-      "React, Redux, Redux-Saga, Firebase, SASS, Typescript, Styled Components, Stripe",
+      "React | Redux | Redux-Saga | Firebase | SASS | Typescript | Styled Components | Stripe",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const projects = [
     liveLink: "https://ozark-airbnb.netlify.app/",
     image: ozarkAirbnbImage,
     imageDesc: "Front end website for an Airbnb business called Ozark Airbnb",
-    technologies: "React",
+    technologies: "React | Bootstrap",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const projects = [
     // liveLink: "https://studybuddy-frontend.vercel.app/",
     image: studyBuddyImage,
     imageDesc: "A tool for students to use in order to prepare for tests",
-    technologies: "React, Express, MongoDB, Node, GraphQL",
+    technologies: "React | Express | MongoDB | Node | GraphQL",
   },
 ];
 
