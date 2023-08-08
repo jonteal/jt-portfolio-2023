@@ -16,7 +16,7 @@ const Contact = () => {
         "service_1h7upjw",
         "template_ggj73bi",
         formRef.current,
-        import.meta.env.VITE_API_KEY
+        "GUHQzXgo8msLgXKuk"
       )
       .then(
         (result) => {
