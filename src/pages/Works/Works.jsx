@@ -10,7 +10,7 @@ const projects = [
     id: 1,
     name: "Capstone Clothing",
     description:
-      "A sleek and minimal e-commerce platform with cart, navigation, and stripe payment processing integration.",
+      "A sleek and minimal e-commerce platform with cart, navigation, authentication, and stripe payment processing integration.",
     github: "https://github.com/jonteal/capstone-e-commerce",
     liveLink: "https://capstone-clothing.netlify.app/",
     image: crownClothingImage,
